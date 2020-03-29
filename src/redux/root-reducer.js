@@ -8,7 +8,7 @@ import candidatesReducer from './candidates/candidates.reducer';
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['candidates']
+  whitelist: []
 }
 
 const rootReducer = combineReducers({
