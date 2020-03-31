@@ -7,6 +7,7 @@ import { candidates } from '../../redux/candidates/candidates.actions';
 class CardList extends React.Component {
   constructor(props){
     super(props);
+    console.log(props);
   };
 
   componentDidMount(){
@@ -38,7 +39,7 @@ class CardList extends React.Component {
 
 
 const mapDispatchToProps = dispatch => ({
-  candidates: monsters => dispatch(candidates(monsters))
+  candidates: monsters => dispatch(candidates(monsters)),
   // candidate: monster => dispatch(candidate(monster))
 });
 

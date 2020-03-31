@@ -55,7 +55,6 @@ class HomePage extends React.Component {
         const { monsters, searchField } = this.state;
         const filteredMonsters = monsters.filter(monster =>
                                                  monster.name.toLowerCase().includes(searchField.toLowerCase()));    
-        // candidates(filteredMonsters)
         return (
           <div className='App'>
             <Header />
