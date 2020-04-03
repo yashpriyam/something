@@ -11,7 +11,7 @@ import { withRouter } from 'react-router-dom';
 class Form extends React.Component {
     constructor(props) {
         super(props);
-        console.log(props)
+        // console.log(props)
         this.state = {
             email: '',
             password: '',
@@ -40,7 +40,7 @@ class Form extends React.Component {
             associationListCount : association,
             associationCount : count
        })
-       console.log(this.state.associationListCount);
+    //    console.log(this.state.associationListCount);
     };
 
 
@@ -65,7 +65,7 @@ class Form extends React.Component {
                 return monster;
             }
         })
-        console.log(monster[0]);
+        // console.log(monster[0]);
         // const { monsters } = this.props;
         return (
             <div>
@@ -111,7 +111,7 @@ class Form extends React.Component {
                         {
                             this.state.associationListCount.map((item)=>{
                             return <div className="form-style-3" key={item.value}>
-                                <div className="grid-item"><div className="form-style-10"><div className="section"><span>{item.value}</span></div></div></div>
+                                <div className="grid-item"><div className="form-style-10"><div className="section"><span>{`Round ${item.value}`}</span></div></div></div>
                                     <InterviewCards/>
                                 {/* <input  className="input-field" onChange={this.handleChange} isMulti={true} placeholder={'Add comment'} />          */}
                                 {/* <input className="input-field" onChange={this.handleChange} name={attributeName} isMulti={true} />  */}

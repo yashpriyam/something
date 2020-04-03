@@ -8,7 +8,7 @@ import './card.styles.css';
 import { withRouter } from 'react-router-dom';
 
 const Card = ( props ) => (
-  console.log(props),
+  // console.log(props),
   // `${props.monster.name}${props.monster.id}`
  <div className='card-container' onClick={() => props.currentUser ? props.history.push(`/${props.monster.id}/${props.monster.name}`) : props.history.push('/signin') }>
    {/* <Route exact path='/signin' render={() => this.props.currentUser ? (<Redirect to='/' />) : (<SignInAndSignUpPage />)}/> */}

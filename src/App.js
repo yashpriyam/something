@@ -95,9 +95,8 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = ({ user: {currentUser}, candidates: { monsters } }) => ({
-  currentUser,
-  monsters
+const mapStateToProps = ({ user: {currentUser}}) => ({
+  currentUser
 });
 
 const mapDispatchToProps = dispatch => ({

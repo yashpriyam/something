@@ -7,7 +7,7 @@ import { candidates } from '../../redux/candidates/candidates.actions';
 class CardList extends React.Component {
   constructor(props){
     super(props);
-    console.log(props);
+    // console.log(props);
   };
 
   componentDidMount(){

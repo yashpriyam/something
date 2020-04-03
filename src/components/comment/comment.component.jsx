@@ -8,7 +8,7 @@ import { connect } from 'react-redux';
 class Comment extends React.Component {
     constructor( { currentUser } ) {
         super();
-        console.log(currentUser)
+        // console.log(currentUser)
         this.state = {
             comment: '',
             currentUser
@@ -29,7 +29,7 @@ class Comment extends React.Component {
                 comment: ''
             });
         } catch (error) {
-            console.error(error);
+            // console.error(error);
         }
     };
 
