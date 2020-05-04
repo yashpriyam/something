@@ -109,7 +109,7 @@ class Form extends React.Component {
                     </div>
 
                         {
-                            this.state.associationListCount.map((item)=>{
+                            this.state.associationListCount.map(item=>{
                             return <div className="form-style-3" key={item.value}>
                                 <div className="grid-item"><div className="form-style-10"><div className="section"><span>{`Round ${item.value}`}</span></div></div></div>
                                     <InterviewCards/>
